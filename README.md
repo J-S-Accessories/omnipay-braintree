@@ -1,5 +1,7 @@
 # Omnipay: Braintree
 
+## The `upgraded` branch fixes the issue with this library which doesn't pass the customer name and email to Braintree.
+
 **Braintree driver for the Omnipay PHP payment processing library**
 
 [![Build Status](https://travis-ci.org/thephpleague/omnipay-braintree.svg?branch=master)](https://travis-ci.org/thephpleague/omnipay-braintree)
