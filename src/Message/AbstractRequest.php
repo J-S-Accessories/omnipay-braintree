@@ -374,6 +374,12 @@ abstract class AbstractRequest extends BaseAbstractRequest
         }
 
         return [
+            'customer' => [
+                'email' => $card->getEmail(),
+                'firstName' => $card->getFirstName(),
+                'lastName' => $card->getLastName(),
+                'phone' => $card->getPhone(),
+            ],
             'billing' => [
                 'company' => $card->getBillingCompany(),
                 'firstName' => $card->getBillingFirstName(),
