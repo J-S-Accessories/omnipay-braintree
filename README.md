@@ -1,6 +1,8 @@
 # Omnipay: Braintree
 
-## The `upgraded` branch fixes the issue with this library which doesn't pass the customer name and email to Braintree.
+## The `upgraded` branch fixes the following issues with this library: 
+* Bug where library doesn't pass the customer name and email to Braintree.
+* Bug where if your account has multiple merchant account IDs they cannot be specified when creating a client token.
 
 **Braintree driver for the Omnipay PHP payment processing library**
 
