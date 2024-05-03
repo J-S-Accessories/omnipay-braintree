@@ -13,6 +13,9 @@ class ClientTokenRequest extends AbstractRequest
     public function getData()
     {
         $data = [];
+        if ($merchantId = $this->getMerchantAccountId()) {
+            $data['merchantAccountId'] = $merchantId;
+        }
         if ($customerId = $this->getCustomerId()) {
             $data['customerId'] = $customerId;
         }
